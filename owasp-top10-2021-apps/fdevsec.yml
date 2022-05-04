@@ -1,0 +1,22 @@
+version: v1
+
+id:
+  org: 90cb23e7-97bc-4b9c-be11-e7438e8f268b
+  app: 5cbd5c49-e563-49aa-a5ae-b484aba88efa
+# Optional parameters.
+scanners:
+  - sast
+  - dast
+  - secret
+  - sca   
+
+languages:
+  - python
+  - javascript
+dast:
+  url: https://github.com/nefero/FortiDevSec/
+  fortipentest_scanner: true #true|false
+  full_scan: true #true|false
+     
+resource:
+  serial_scan: false #true|false
